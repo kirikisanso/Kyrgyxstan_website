@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  background-image: url(./3озп.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  color: orange;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section#hero {
+  display: flex;
+  margin-top: 100px;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+#hero h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  transition: 1s;
+}
+
+#hero h1:hover {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+ 
+}
+.box {
+  background-image: url(./2jpg.webp);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  background-size: 200%;
+  background-position: center;
+  border-radius: 10px;
+  justify-content: center;
+  transition: background-size 1s ease-in-out;
+}
+.box:hover {
+  background-size: 300%;
+  transition: background-size 1s ease-in-out;
+}
+
+.small_box {
+  width: 200px;
+  height: 250px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.288);
+  background-image: url(https://sun9-77.userapi.com/impf/C-_P83sfV3jL9mkAbF40rq-icTOItl52yD4scw/bEmNFxm0g-I.jpg?size=604x401&quality=96&sign=0ae90463dea22f97ea504002493ad5af&type=album);
+}
+.small_box_2 {
+  width: 200px;
+  height: 250px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.288);
+  background-image: url(https://ummamag.kg/images/gallery/photo_213_1553091048.jpg);
+}
+.big_box {
+  width: 200px;
+  height: 250px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.288);
+  background-image: url(https://www.orexca.com/img/kazakhstan/traditions/kazakh-national-dress4.jpg);
+}
+.big_box_2 {
+  width: 200px;
+  height: 250px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.288);
+  background-image: url(https://sun9-48.userapi.com/impf/xkyXT4VZUaJpy0kkArET__dERpIca4GALr3cAg/qNVaYJRVLVQ.jpg?size=300x225&quality=96&sign=7b2375f84176b2f622a5ea9d12be0963&c_uniq_tag=2C7LlYKpDYjCjKUAA3d7X_TFKrtUnjJ7mnqz7B7SeNI&type=album);
+}
+
+.big_box_3 {
+  width: 200px;
+  height: 250px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.288);
+  background-image: url(https://kg.kabar.kg/site/assets/files/21349/img_3480.jpg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+  .navbar .toggle_btn {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+  .dropdown_menu li a {
+    color: #fff;
+  }
+}
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+  body {
+    background-color: rgb(50, 121, 121);
+    background-image: none;
+  }
+
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+  .dropdown_menu li a {
+    color: #fff;
+  }
+
+  section#hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .box h1 {
+    font-size: 1.5rem;
+  }
+}
+
+footer {
+  margin: 40px;
+}
